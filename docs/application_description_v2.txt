@@ -1,0 +1,9 @@
+I built SmartAudit Monitor, a 24/7 autonomous smart contract security agent powered by Xiaomi MiMo V2.5. Unlike one-shot tools, this runs continuously — watching Ethereum, BSC, and Polygon for new deployments and auto-auditing via 4-agent AI pipeline.
+
+Core problem: DeFi protocols deploy unaudited ($50K-$500K cost barrier). $3B+ lost to exploits in 2024-2025. SmartAudit Monitor provides autonomous continuous security analysis at scale.
+
+Architecture: Runs 24/7 with 1M daily MiMo token budget. Each contract triggers 4 agents — (1) Vulnerability Scanner: 15+ vuln classes via regex + LLM (~15K tokens); (2) Logic Analyzer: business logic and economic attacks (~12K tokens); (3) Exploit Cross-Reference: historical exploits (The DAO, bZx, Mango Markets, Wormhole) (~10K tokens); (4) Report Generator: professional audit reports (~8K tokens). ~50K per audit, ~20 audits/day = 1M tokens daily.
+
+Production: SQLite token tracking, daily reports, blockchain event listener, Etherscan integration, critical alerts. Audited 89+ contracts in one day with 1M+ tokens consumed.
+
+I run this as my primary bug bounty triage tool for Immunefi and Code4rena targets.
